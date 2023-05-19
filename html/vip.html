@@ -1,0 +1,1093 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <!-- <span class="brad">
+                TONG BOU
+                <span class="time"></span>
+            </span> -->
+            <ul class="user alLogin display">
+                <li class="lv">
+                    <p class="level">Thành viên mới</p>
+                    <p class="name">
+                        userName
+                        <span class="total">9999</span>
+                    </p>
+                    <ul class="transferInfo">
+                        <li class="platform">
+                            <div>
+                                <p>BNG</p>
+                                <p class="money">
+                                    <i class="display"></i>
+                                    <span></span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>pls</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>SimplePlay</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>ALL BET</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>SG</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>RTG</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>IFUN</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>WM</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>GS</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>bWin</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>36588</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>RSG</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>PNG</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li onclick="window.location.href='./deposit.html'">
+                    <i class="deposit_ic"></i>
+                    Nạp tiền
+                </li>
+                <li onclick="window.location.href='./transfer.html'">
+                    <i class="transfer_ic"></i>
+                    CHUYỂN ĐIỂM
+                </li>
+                <li onclick="window.location.href='./withdrawal.html'">
+                    <i class="withdrawal_ic"></i>
+                    RÚT TIỀN
+                </li>
+                <li onclick="window.location.href='./member.html'">
+                    <i class="member_ic"></i>
+                    Thông tin hội viên
+                </li>
+                <li onclick="window.location.href='./mail.html'">
+                    <i class="mail_ic"></i>
+                    Thư thông báo
+                </li>
+                <li onclick="window.location.href='../index.html'">
+                    <i class="exit_ic"></i>
+                    Đăng xuất
+                </li>
+            </ul>
+        </div>
+        <div class="gameNav">
+            <div class="center">
+                <img class="logo" src="../images/icon/logo.png">
+                <ul>
+                    <li class="menu" onclick="window.location.href='../index.html'">TRANG CHỦ</li>
+                    <li class="sportBtn" onclick="window.location.href='./sportPage.html'">THỂ THAO</li>
+                    <li class="liveBtn" onclick="window.location.href='./livePage.html'">CASINO</li>
+                    <li class="lotteryBtn" onclick="window.location.href='./lotteryPage.html'">XỔ SỐ</li>
+                    <li class="slotBtn" onclick="window.location.href='./slotPage.html'">SLOTS</li>
+                    <li class="fishBtn" onclick="window.location.href='./fishPage.html'">BẮN CÁ</li>
+                    <li class="boardBtn" onclick="window.location.href='./boardPage.html'">GAME BÀI</li>
+                    <li class="event" onclick="window.location.href='./event.html'">KHUYẾN MÃI</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topGameList">
+             <div class="listWrap">
+                 <div class="center">
+                     <i class="prev"></i>
+                     <div class="container">
+                         <ul class="sport">
+                             <li onclick="openSportGame()">
+                                 <div>
+                                     <img src="../images/partner/sport/36588.png">
+                                 </div>
+                                 <p>36588</p>
+                             </li>
+                         </ul>
+                         <ul class="live">
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_1.png">
+                                </div>
+                                <p>SA</p>
+                            </li>
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_2.png">
+                                </div>
+                                <p>All BET</p>
+                            </li>
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_3.png">
+                                </div>
+                                <p>DG</p>
+                            </li>
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_4.png">
+                                </div>
+                                <p>WM</p>
+                            </li>
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_5.png">
+                                </div>
+                                <p>OG</p>
+                            </li>
+                         </ul>
+                         <ul class="lottery">
+                            <li onclick="openLotteryGame()">
+                                <div>
+                                    <img src="../images/partner/lottery/rwd.png">
+                                </div>
+                                <p>RWD</p>
+                            </li>
+                         </ul>
+                         <ul class="slot">
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/bng.png">
+                                </div>
+                                <p>BNG</p>
+                                <div class="fixBox display">
+                                    <p class="title">duy trì</p>
+                                    <p>2022/03/02 下午2:00 ~</p>
+                                    <p>2020/03/02 下午4:00</p>
+                                </div>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/tpg.png">
+                                </div>
+                                <p>TPG</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/rsg.png">
+                                </div>
+                                <p>RSG</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/bwin.png">
+                                </div>
+                                <p>bWin</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/ifun.png">
+                                </div>
+                                <p>IFUN</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/pls.png">
+                                </div>
+                                <p>PLS</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/sp.png">
+                                </div>
+                                <p>SP</p>
+                            </li>
+                         </ul>
+                         <ul class="fish">
+                            <li onclick="window.location.href='../html/fishPage.html'">
+                                <div>
+                                    <img src="../images/partner/fish/tpg.png">
+                                </div>
+                                <p>TPG</p>
+                            </li>
+                            <li onclick="window.location.href='../html/fishPage.html'">
+                                <div>
+                                    <img src="../images/partner/fish/rsg.png">
+                                </div>
+                                <p>RSG</p>
+                            </li>
+                            <li onclick="window.location.href='../html/fishPage.html'">
+                                <div>
+                                    <img src="../images/partner/fish/bwin.png">
+                                </div>
+                                <p>bWin</p>
+                            </li>
+                            <li onclick="window.location.href='../html/fishPage.html'">
+                                <div>
+                                    <img src="../images/partner/fish/sp.png">
+                                </div>
+                                <p>SP</p>
+                            </li>
+                         </ul>
+                         <ul class="board">
+                            <li onclick="window.location.href='../html/boardPage.html'">
+                                <div>
+                                    <img src="../images/partner/board/rwd.png">
+                                </div>
+                                <p>RWD</p>
+                            </li>
+                         </ul>
+                     </div>
+                     <i class="next"></i>
+                 </div>
+             </div>
+        </div>
+        <div class="marqueeArea">
+            <div class="center">
+                <div class="marqueeWrap">
+                    <i class="marquee_ic"></i>
+                    <div class="marquee">
+                        <p>TEST</p>
+                    </div>
+                </div>
+                <div class="people">
+                    <i class="people_ic"></i>
+                    9999
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="innerPage">
+            <div class="center">
+                <aside class="innerSide">
+                    <div class="userInfo">
+                        <div>
+                            <p class="account">
+                                bbb123
+                                <span class="lv">Thành viên mới</span>
+                            </p>
+                            <p class="days">Gia nhập 110 ngày</p>
+                            <ul class="quickSelect">
+                                <li onclick="window.location.href='./deposit.html'">
+                                    <p class="btn"></p>
+                                    <p>NẠP TIỀN</p>
+                                </li>
+                                <li onclick="window.location.href='./transfer.html'">
+                                    <p class="btn transfer"></p>
+                                    <p>CHUYỂN ĐIỂM</p>
+                                </li>
+                                <li onclick="window.location.href='./withdrawal.html'">
+                                    <p class="btn withdrawal"></p>
+                                    <p>RÚT TIỀN</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="innerNav">
+                        <li onclick="window.location.href='./member.html'">
+                            <i class="user_ic"></i>
+                            Thông tin tài khoản
+                        </li>
+                        <li onclick="window.location.href='./invite.html'">
+                            <i class="invite_ic"></i>
+                            Mời các thành viên
+                        </li>
+                        <li class="active" onclick="window.location.href='./vip.html'">
+                            <i class="vip_ic"></i>
+                            Cấp bậc hội viên
+                        </li>
+                        <li onclick="window.location.href='./wallet.html'">
+                            <i class="wallet_ic"></i>
+                            Ví tiền của tôi
+                        </li>
+                        <li onclick="window.location.href='./bankCard.html'">
+                            <i class="card_ic"></i>
+                            Liên kết thẻ ngân hàng
+                        </li>
+                        <li onclick="window.location.href='./dealRecord.html'">
+                            <i class="dealRecord_ic"></i>
+                            Lịch sử giao dịch
+                        </li>
+                        <li onclick="window.location.href='./point.html'">
+                            <i class="dividend_ic"></i>
+                            Tra cứu điểm thưởng
+                        </li>
+                        <li onclick="window.location.href='./betRecord.html'">
+                            <i class="betRecord_ic"></i>
+                            Lịch sử đặt cược
+                        </li>
+                        <li onclick="window.location.href='./eventApply.html'">
+                            <i class="event_ic"></i>
+                            Đăng ký khuyến mãi
+                        </li>
+                        <li onclick="window.location.href='./mail.html'">
+                            <i class="mail_ic"></i>
+                            Thư thông báo
+                        </li>
+                    </ul>
+                </aside>
+                <section>
+                    <div class="vipWrap outMode display">
+                        <div class="top">
+                            <div class="vipHeader">
+                                <div class="medal"></div>
+                                <div class="rightBox">
+                                    <p class="lv">Cấp bậc hiện tại : Thành viên mới</p>
+                                    <p class="money">
+                                        <span>Tổng nạp tiền : $0</span>
+                                        <span>Tổng cược tích lũy : $0</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="lvGraph">
+                                <ul class="text">
+                                    <li>VIP0</li>
+                                    <li>VIP1</li>
+                                    <li>VIP2</li>
+                                    <li>VIP3</li>
+                                    <li>VIP4</li>
+                                    <li>VIP5</li>
+                                    <li>VIP6</li>
+                                    <li>VIP7</li>
+                                </ul>
+                                <ul class="bar">
+                                    <li></li>
+                                </ul>
+                            </div>
+                            <div class="nextBox">
+                                <p class="nextWord">Yêu cầu để thăng cấp tiếp theo: VIP 1</p>
+                                <div class="nextBar">
+                                    Tổng nạp tiền
+                                    <ul class="bar">
+                                        <li></li>
+                                    </ul>
+                                    <p>Cần nạp thêm $5000</p>
+                                </div>
+                                <div class="nextBar">
+                                    Tổng cược tích lũy
+                                    <ul class="bar">
+                                        <li></li>
+                                    </ul>
+                                    <p>Cần cược tích lũy thêm $50000</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="levelEnjoy">
+                            <div class="title">Thành viên mới Phúc lợi</div>
+                            <ul>
+                                <li>
+                                    <p class="text">Số lần rút tiền trong ngày</p>
+                                    <p class="num">Không hạn chế</p>
+                                </li>
+                                <li>
+                                    <p class="text">Số tiền rút tối đa trong ngày</p>
+                                    <p class="num">Không hạn chế</p>
+                                </li>
+                                <li>
+                                    <p class="text">Số lần miễn phí rút tiền trong ngày</p>
+                                    <p class="num">2</p>
+                                </li>
+                            </ul>
+                            <button class="more">Chi tiết VIP</button>
+                        </div>
+                    </div>
+                    <div class="vipWrap innerMode">
+                        <div class="detailTitle">
+                            <i class="back"></i>
+                            Chi tiết VIP
+                        </div>
+                        <div class="detailCardBox">
+                            <i class="prev"></i>
+                            <div class="wrap">
+                                <ul>
+                                    <li>
+                                        <div class="cardBg">
+                                            <div class="medal"></div>
+                                            <div class="content">
+                                                <div>
+                                                    <p class="text">Tổng số tiền nạp yêu cầu</p>
+                                                    <p class="num">5000.00</p>
+                                                </div>
+                                                <div>
+                                                    <p class="text">Tổng cược tích lũy yêu cầu</p>
+                                                    <p class="num">50000.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardBg v1">
+                                            <div class="medal"></div>
+                                            <div class="content">
+                                                <div>
+                                                    <p class="text">Tổng số tiền nạp yêu cầu</p>
+                                                    <p class="num">20000.00</p>
+                                                </div>
+                                                <div>
+                                                    <p class="text">Tổng cược tích lũy yêu cầu</p>
+                                                    <p class="num">200000.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardBg v2">
+                                            <div class="medal"></div>
+                                            <div class="content">
+                                                <div>
+                                                    <p class="text">Tổng số tiền nạp yêu cầu</p>
+                                                    <p class="num">100000.00</p>
+                                                </div>
+                                                <div>
+                                                    <p class="text">Tổng cược tích lũy yêu cầu</p>
+                                                    <p class="num">500000.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardBg v2">
+                                            <div class="medal"></div>
+                                            <div class="content">
+                                                <div>
+                                                    <p class="text">Tổng số tiền nạp yêu cầu</p>
+                                                    <p class="num">100000.00</p>
+                                                </div>
+                                                <div>
+                                                    <p class="text">Tổng cược tích lũy yêu cầu</p>
+                                                    <p class="num">500000.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardBg v2">
+                                            <div class="medal"></div>
+                                            <div class="content">
+                                                <div>
+                                                    <p class="text">Tổng số tiền nạp yêu cầu</p>
+                                                    <p class="num">100000.00</p>
+                                                </div>
+                                                <div>
+                                                    <p class="text">Tổng cược tích lũy yêu cầu</p>
+                                                    <p class="num">500000.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardBg v2">
+                                            <div class="medal"></div>
+                                            <div class="content">
+                                                <div>
+                                                    <p class="text">Tổng số tiền nạp yêu cầu</p>
+                                                    <p class="num">100000.00</p>
+                                                </div>
+                                                <div>
+                                                    <p class="text">Tổng cược tích lũy yêu cầu</p>
+                                                    <p class="num">500000.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardBg v2">
+                                            <div class="medal"></div>
+                                            <div class="content">
+                                                <div>
+                                                    <p class="text">Tổng số tiền nạp yêu cầu</p>
+                                                    <p class="num">100000.00</p>
+                                                </div>
+                                                <div>
+                                                    <p class="text">Tổng cược tích lũy yêu cầu</p>
+                                                    <p class="num">500000.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="cardBg v2">
+                                            <div class="medal"></div>
+                                            <div class="content">
+                                                <div>
+                                                    <p class="text">Tổng số tiền nạp yêu cầu</p>
+                                                    <p class="num">100000.00</p>
+                                                </div>
+                                                <div>
+                                                    <p class="text">Tổng cược tích lũy yêu cầu</p>
+                                                    <p class="num">500000.00</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <i class="next"></i>
+                        </div>
+                        <div class="detailTitle_2">Tất cả các cấp khuyến mãi/Xuống hạng điều kiện</div>
+                        <ul class="fakeTable">
+                            <li class="header">
+                                <div>&ensp;</div>
+                                <div>tổng tiền gửi</div>
+                                <div>Tháng này khuyến mãi khối lượng đặt cược</div>
+                                <div>Tháng này Xuống hạng khối lượng đặt cược</div>
+                            </li>
+                            <li>
+                                <div>Thành viên mới</div>
+                                <div>0</div>
+                                <div>0</div>
+                                <div>0</div>
+                            </li>
+                            <li>
+                                <div>VIP 1</div>
+                                <div>5,000</div>
+                                <div>50,000</div>
+                                <div>20,000</div>
+                            </li>
+                            <li>
+                                <div>VIP 2</div>
+                                <div>20,000</div>
+                                <div>200,000</div>
+                                <div>60,000</div>
+                            </li>
+                            <li>
+                                <div>VIP 3</div>
+                                <div>100,000</div>
+                                <div>500,000</div>
+                                <div>180,000</div>
+                            </li>
+                            <li>
+                                <div>VIP 4</div>
+                                <div>300,000</div>
+                                <div>1,500,000</div>
+                                <div>600,000</div>
+                            </li>
+                            <li>
+                                <div>VIP 5</div>
+                                <div>800,000</div>
+                                <div>4,000,000</div>
+                                <div>1,500,000</div>
+                            </li>
+                            <li>
+                                <div>VIP 6</div>
+                                <div>1,500,000</div>
+                                <div>8,000,000</div>
+                                <div>3,000,000</div>
+                            </li>
+                            <li>
+                                <div>VIP 7</div>
+                                <div>3,000,000</div>
+                                <div>15,000,000</div>
+                                <div>6,000,000</div>
+                            </li>
+                        </ul>
+                        <div class="detailTitle_2">Cấp bậc hội viên</div>
+                        <ul class="fakeTable">
+                            <li class="header">
+                                <div>&ensp;</div>
+                                <div>SLOTS</div>
+                                <div>Game bài</div>
+                                <div>CASINO</div>
+                                <div>Thể Thao</div>
+                                <div>Giới hạn tối đa</div>
+                            </li>
+                            <li>
+                                <div>Thành viên mới</div>
+                                <div>0.25</div>
+                                <div>0.25</div>
+                                <div>0.30</div>
+                                <div>0.20</div>
+                                <div>16,888</div>
+                            </li>
+                            <li>
+                                <div>VIP 1</div>
+                                <div>0.25</div>
+                                <div>0.25</div>
+                                <div>0.30</div>
+                                <div>0.20</div>
+                                <div>28,888</div>
+                            </li>
+                            <li>
+                                <div>VIP 2</div>
+                                <div>0.30</div>
+                                <div>0.30</div>
+                                <div>0.35</div>
+                                <div>0.25</div>
+                                <div>32,888</div>
+                            </li>
+                            <li>
+                                <div>VIP 3</div>
+                                <div>0.35</div>
+                                <div>0.35</div>
+                                <div>0.40</div>
+                                <div>0.30</div>
+                                <div>32,888</div>
+                            </li>
+                            <li>
+                                <div>VIP 4</div>
+                                <div>0.40</div>
+                                <div>0.40</div>
+                                <div>0.45</div>
+                                <div>0.35</div>
+                                <div>52,888</div>
+                            </li>
+                            <li>
+                                <div>VIP 5</div>
+                                <div>0.45</div>
+                                <div>0.45</div>
+                                <div>0.50</div>
+                                <div>0.40</div>
+                                <div>52,888</div>
+                            </li>
+                            <li>
+                                <div>VIP 6</div>
+                                <div>0.45</div>
+                                <div>0.45</div>
+                                <div>0.50</div>
+                                <div>0.40</div>
+                                <div>68,888</div>
+                            </li>
+                            <li>
+                                <div>VIP 7</div>
+                                <div>0.50</div>
+                                <div>0.50</div>
+                                <div>0.55</div>
+                                <div>0.45</div>
+                                <div>88,888</div>
+                            </li>
+                        </ul>
+                        <div class="detailTitle_2">Tất cả các cấp Ưu đãi độc quyền</div>
+                        <ul class="fakeTable">
+                            <li class="header">
+                                <div>&ensp;</div>
+                                <div>ngày độc thân rút tiền giới hạn trên</div>
+                                <div>hàng tuần miễn phí rút tiền tần số</div>
+                                <div>nâng cấp tiền quà</div>
+                                <div>Ngày sinh nhật Tặng kem</div>
+                                <div>mỗi tháng Phong bì đỏ</div>
+                            </li>
+                            <li>
+                                <div>Thành viên mới</div>
+                                <div>20W</div>
+                                <div>2</div>
+                                <div>X</div>
+                                <div>X</div>
+                                <div>X</div>
+                            </li>
+                            <li>
+                                <div>VIP 1</div>
+                                <div>20W</div>
+                                <div>2</div>
+                                <div>188</div>
+                                <div>88</div>
+                                <div>X</div>
+                            </li>
+                            <li>
+                                <div>VIP 2</div>
+                                <div>25W</div>
+                                <div>3</div>
+                                <div>388</div>
+                                <div>168</div>
+                                <div>66</div>
+                            </li>
+                            <li>
+                                <div>VIP 3</div>
+                                <div>25W</div>
+                                <div>5</div>
+                                <div>888</div>
+                                <div>288</div>
+                                <div>188</div>
+                            </li>
+                            <li>
+                                <div>VIP 4</div>
+                                <div>25W</div>
+                                <div>5</div>
+                                <div>1,688</div>
+                                <div>588</div>
+                                <div>388</div>
+                            </li>
+                            <li>
+                                <div>VIP 5</div>
+                                <div>50W</div>
+                                <div>8</div>
+                                <div>2,888</div>
+                                <div>888</div>
+                                <div>1,288</div>
+                            </li>
+                            <li>
+                                <div>VIP 6</div>
+                                <div>70W</div>
+                                <div>8</div>
+                                <div>5,888</div>
+                                <div>1,888</div>
+                                <div>2,888</div>
+                            </li>
+                            <li>
+                                <div>VIP 7</div>
+                                <div>100W</div>
+                                <div>10</div>
+                                <div>8,888</div>
+                                <div>3,888</div>
+                                <div>5,888</div>
+                            </li>
+                        </ul>
+                        <div class="detailTitle_2 sp">Lưu ý hạng mục VIP:</div>
+                        <p class="msg">
+                            Kể từ bây giờ, bất kỳ thành viên nào tham gia trang web và tiến hành xác thực thông tin cá nhân đều có thể nhận được hoạt động hoàn trả hàng ngày 
+                            bằng cách tích lũy số điểm cược hợp lệ của bất kỳ trò chơi nào. Đặt cược càng nhiều, bạn nhận được càng nhiều.
+                        </p>
+                        <p class="msg">Thời gian thanh toán hoàn trả: Từ 00:00 - 23:59</p>
+                        <p class="msg">Cách nhận : Hệ thống sẽ tự động tính điểm và hoàn trả điểm cho hội viên</p>
+                        <p class="msg">Thời gian nhận điểm : 12:00 Trưa</p>
+                        <ul class="msgBox">
+                            <li>
+                                Tiêu chuẩn thăng cấp: Nếu số tiền nạp tích lũy và số tiền cá cược tích lũy của thành viên đạt đủ yêu cầu cấp bậc VIP tương ứng, sẽ được thăng
+                                cấp VIP tương ứng sau khi xét duyệt trước 24h ngày hôm sau.
+                            </li>
+                            <li>
+                                Nếu cấp bậc VIP đạt tiêu chuẩn tương ứng, hội viên có thể được thăng cấp tối đa mỗi ngày 1 lần và hội viên không thể thăng cấp bằng cách 
+                                nhảy bậc.
+                            </li>
+                            <li>
+                                Bảo lưu cấp VIP : Sau khi đạt cấp bậc VIP nhất định, sẽ được bảo lưu cấp bậc VIP trong vòng 60 ngày, hội viên sẽ được thăng cấp bậc VIP tiếp 
+                                theo trong thời gian trên nếu đạt đủ yêu cầu, bảo lưu cấp bậc VIP sẽ được tính lại theo cấp độ hiện tại.
+                            </li>
+                            <li>
+                                Hạ cấp bậc VIP : Nếu hội viên không hoàn thành các yêu cầu tương ứng trong vòng 60 ngày, hệ thống sẽ tự động hạ 1 hạng của cấp bậc hiện
+                                tại, đồng thời các quyền lợi ưu đãi tương ứng cũng sẽ bị hạ xuống tương tự.
+                            </li>
+                            <li>
+                                Thưởng thăng cấp: Hệ thống sẽ tự động phát quà nâng cấp sau khi thành viên đạt cấp bậc tương ứng, và mỗi hội viên chỉ có thể nhận quà 
+                                thăng cấp một lần duy nhất cho mỗi cấp bậc (thưởng thăng cấp có thể nhận bằng code)
+                            </li>
+                            <li>
+                                Thưởng sinh nhật: Hội viên đăng ký trên 60 ngày có thể đăng nhập vào ngày sinh nhật để nhận quà sinh nhật tương ứng của cấp độ 
+                                (thưởng sinh nhật có thể nhận bằng code)
+                            </li>
+                            <li>
+                                Lì xì hàng tháng: Hội viên nạp trên 1000 điểm trong tháng trước có thể đăng ký nhận lì xì tương ứng cấp bậc hiện tại trước khi kết thúc tháng
+                                hiện tại ( lì xì hàng tháng có thể nhận bằng code ). Cách nhận lì xì: Sẽ được kết thúc vào lúc 23:59 cuối tháng (hàng tháng) . Trong thời gian 
+                                này, hội viên chủ động liên hệ nhân viên CSKH để đăng ký, nếu quá thời gian nói trên sẽ không được tính.
+                            </li>
+                            <li>Trang có quyền sửa đổi cuối cùng và chấm dứt sự kiện.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <nav class="sideBar">
+        <p class="download" onclick="window.location.href='./help.html'">
+            <i></i>
+            Tải bằng điện thoại
+        </p>
+        <ul class="rightSide">
+            <li class="service" onclick="window.location.href='./help.html'">
+                <i></i>
+            </li>
+            <li class="line" onclick="window.location.href='./help.html'">
+                <i></i>
+            </li>
+        </ul>
+    </nav>
+    <footer>
+        <div class="top">
+            <div class="center">
+                <div class="btnBox">
+                    <ul>
+                        <li class="openNews">Thông báo mới nhất</li>
+                        <li onclick="window.location.href='./event.html'">Khuyến mãi</li>
+                        <li onclick="window.location.href='./vip.html'">Cấp bậc hội viên</li>
+                        <li onclick="window.location.href='./help.html'">Trung tâm hỗ trợ</li>
+                        <li onclick="window.location.href='./help.html'">Thông tin trang</li>
+                    </ul>
+                </div>
+                <p>2021 au8988.net Đã đăng ký Bản quyền │ 18+</p>
+            </div>
+        </div>
+        <div class="footerList">
+            <div class="center">
+                <p>Chúng tôi nỗ lực trở thành công ty giải trí trực tuyến hàng đầu thế giới. Vì vậy, khi giải quyết bất cứ việc gì, đều ưu tiên suy nghĩ cho quyền lợi của khách hàng đầu tiên. Sự hài lòng lớn nhất của khách hàng chính</p>
+                <p>là thành công của chúng tôi.Cung cấp dịch vụ khách hàng trực tuyến 24 giờ, đồng thời cũng cung cấp dịch vụ tốt nhất được kết hợp giữa tính chuyên nghiệp và sự nhân văn.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="filter">
+        <!--遊戲投注彈窗-->
+        <div class="jumpWindow betWindow sportGame">
+            <div class="title">
+                <p>Chuyển điểm nhanh</p>
+                <i class="close_ic"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p>nền tảng</p>
+                    <div class="smallTitle">36588</div>
+                </div>
+                <div class="row">
+                    <p>Ví chính</p>
+                    <input type="text" value="$9999" readonly>
+                </div>
+                <div class="row">
+                    <i class="trans_arrow"></i>
+                </div>
+                <div class="row">
+                    <p>36588 SPORTS</p>
+                    <input type="text" value="$0" readonly>
+                </div>
+                <div class="row">
+                    <p>Số điểm muốn chuyển</p>
+                    <input type="text" value="$100">
+                </div>
+                <div class="row forBtn">
+                    <div class="btnBox">
+                        <button>$100</button>
+                        <button>$500</button>
+                        <button>$1000</button>
+                        <button>$3000</button>
+                        <button>$5000</button>
+                        <button>$10000</button>
+                        <button>Tất cả</button>
+                    </div>
+                </div>
+                <div class="row forBtn">
+                    <button class="check">Xác nhận chuyển điểm</button>
+                </div>
+            </form>
+            <div class="enterGame">
+                <button>Vào Game</button>
+            </div>
+        </div>
+        <div class="jumpWindow betWindow liveGame">
+            <div class="title">
+                <p>Chuyển điểm nhanh</p>
+                <i class="close_ic"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p>nền tảng</p>
+                    <div class="smallTitle">WM CASINO</div>
+                </div>
+                <div class="row">
+                    <p>Ví chính</p>
+                    <input type="text" value="$9999" readonly>
+                </div>
+                <div class="row">
+                    <i class="trans_arrow"></i>
+                </div>
+                <div class="row">
+                    <p>WM CASINO</p>
+                    <input type="text" value="$0" readonly>
+                </div>
+                <div class="row">
+                    <p>Số điểm muốn chuyển</p>
+                    <input type="text" value="$100">
+                </div>
+                <div class="row forBtn">
+                    <div class="btnBox">
+                        <button>$100</button>
+                        <button>$500</button>
+                        <button>$1000</button>
+                        <button>$3000</button>
+                        <button>$5000</button>
+                        <button>$10000</button>
+                        <button>Tất cả</button>
+                    </div>
+                </div>
+                <div class="row forBtn">
+                    <button class="check">Xác nhận chuyển điểm</button>
+                </div>
+            </form>
+            <div class="enterGame">
+                <button>Vào Game</button>
+            </div>
+        </div>
+        <div class="jumpWindow betWindow lotteryGame">
+            <div class="title">
+                <p>Chuyển điểm nhanh</p>
+                <i class="close_ic"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p>Ví chính</p>
+                    <div class="smallTitle">RWD</div>
+                </div>
+                <div class="row">
+                    <p>Số điểm muốn chuyển</p>
+                    <input type="text" value="$9999" readonly>
+                </div>
+                <div class="row">
+                    <i class="trans_arrow"></i>
+                </div>
+                <div class="row">
+                    <p>RWD</p>
+                    <input type="text" value="$0" readonly>
+                </div>
+                <div class="row">
+                    <p>Số điểm muốn chuyển</p>
+                    <input type="text" value="$100">
+                </div>
+                <div class="row forBtn">
+                    <div class="btnBox">
+                        <button>$100</button>
+                        <button>$500</button>
+                        <button>$1000</button>
+                        <button>$3000</button>
+                        <button>$5000</button>
+                        <button>$10000</button>
+                        <button>Tất cả</button>
+                    </div>
+                </div>
+                <div class="row forBtn">
+                    <button class="check">Xác nhận chuyển điểm</button>
+                </div>
+            </form>
+            <div class="enterGame">
+                <button>Vào Game</button>
+            </div>
+        </div>
+        <!--最新公告-->
+        <div class="jumpWindow news">
+            <div class="title">
+                <p>Thông báo mới nhất</p>
+                <i class="close_ic"></i>
+            </div>
+            <ul class="nav">
+                <li class="hot active">HOT</li>
+                <li class="normal">Tin phổ biến</li>
+                <li class="deposit">Thông tin Nạp tiền</li>
+            </ul>
+            <ul class="content forHot display">
+                <li>
+                    <div>
+                        <p class="text">testtesttesttesttesttesttesttest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="text">testtest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="text">testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="content forNormal">
+                <li>
+                    <div>
+                        <p class="text">testtest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="text">testtest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="content forDeposit">
+                <li>
+                    <div>
+                        <p class="text">testtest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bg"></div>
+</body>
+</html>

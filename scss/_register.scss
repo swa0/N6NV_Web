@@ -1,0 +1,172 @@
+.registerWrap {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .bigBox {
+        border-radius: 17px;
+        overflow: hidden;
+        border: solid 1px $mainBorder_2;
+        box-shadow: 1px 2px 8px $mainShadow_1;
+
+        .title {
+            background: $jumpWindow_Header;
+            width: 864px;
+            height: 93px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $jumpWindow_Title;
+            font-weight: bold;
+            font-size: 35px;
+            
+            i {
+                display: block;
+                width: 44px;
+                height: 44px;
+                margin: 0 15px;
+            }
+        }
+
+        .content {
+            width: 864px;
+            height: auto;
+            background: $window_BG;
+            box-sizing: border-box;
+            padding: 28px 65px 30px;
+            display: flex;
+            flex-wrap: wrap;
+
+            .inputBox {
+                width: 50%;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+
+                label {
+                    width: 332px;
+                    height: auto;
+                    position: relative;
+                    margin-bottom: 19px;
+
+                    &.pad {
+                        padding-bottom: 32px;
+                    }
+                    &.hasID {
+
+                        input {
+                            padding-left: 30px;
+                        }
+
+                        .choose {
+                            width: 58px;
+                            height: 42px;
+                            @include choose;
+
+                            li {
+                                width: 100%;
+                                height: 100%;
+
+                                &.wechat {
+                                    
+                                    i {
+                                        background-position-y: 100%;
+                                    }
+                                }
+
+                                i {
+                                    display: block;
+                                    width: 27px;
+                                    height: 27px;
+                                    position: absolute;
+                                    top: 50%;
+                                    transform: translateY(-50%);
+                                    left: 8px;
+                                }
+                            }
+                        }
+                    }
+
+                    input {
+                        width: 100%;
+                        height: 42px;
+                        @include mainInput;
+                    }
+
+                    .err {
+                        font-size: 12px;
+                        line-height: 20px;
+                        font-weight: bold;
+                        color: $remind;
+                        position: absolute;
+                        left: 0;
+                        top: 42px;
+
+                        &.sp {
+                            top: 0;
+                            font-size: 14px;
+                        }
+                    }
+
+                    .send {
+                        width: auto;
+                        height: 33px;
+                        position: absolute;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        right: 5px;
+                        @include secondBtn;
+                    }
+                }
+
+                .check {
+                    width: 332px;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    margin-top: 26px;
+
+                    input {
+                        margin-right: 10px;
+                        width: 24px;
+                        height: 24px;
+                    }
+
+                    p {
+                        color: $mainFont_1;
+                        font-size: 14px;
+                        font-weight: bold;
+                        line-height: 20px;
+
+                        span {
+                            color: $link;
+                            padding-left: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .btnBox {
+                width: 100%;
+                height: auto;
+                display: flex;
+                box-sizing: border-box;
+                padding: 0 17px;
+                justify-content: space-between;
+                margin-top: 30px;
+
+                button {
+                    width: 332px;
+                    height: 42px;
+                    @include mainBtn;
+                }
+            }
+        }
+    }
+}

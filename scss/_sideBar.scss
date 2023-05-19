@@ -1,0 +1,63 @@
+.sideBar {
+
+    .download {
+        position: fixed;
+        left: 15px;
+        top: 190px;
+        z-index: 1;
+        width: 60px;
+        height: auto;
+        font-size: 20px;
+        font-weight: bold;
+        writing-mode: vertical-lr;
+        letter-spacing: 8px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        color: $sideBar_Word;
+        background: $sideBar_BG1;
+        border: solid 1px $sideBar_Border1;
+        box-sizing: border-box;
+        border-radius: 30px;
+        padding: 24px 15px;
+
+        i {
+            width: 30px;
+            height: 30px;
+            margin-bottom: 20px;
+        }
+    }
+
+    .rightSide {
+        position: fixed;
+        right: 10px;
+        top: 240px;
+        z-index: 1;
+        width: auto;
+        height: auto;
+
+        li {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $sideBar_BG1;
+            border: solid 1px $sideBar_Border1;
+            cursor: pointer;
+            margin-bottom: 15px;
+            border-radius: 50px;
+            transition: 0.2s all;
+
+            &:hover,&:active,&.active {
+                transform: scale(1.2);
+            }
+
+            i {
+                width: 30px;
+                height: 30px;
+            }
+        }
+    }
+}

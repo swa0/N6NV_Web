@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <!-- <span class="brad">
+                TONG BOU
+                <span class="time"></span>
+            </span> -->
+            <ul class="user alLogin display">
+                <li class="lv">
+                    <p class="level">Thành viên mới</p>
+                    <p class="name">
+                        userName
+                        <span class="total">9999</span>
+                    </p>
+                    <ul class="transferInfo">
+                        <li class="platform">
+                            <div>
+                                <p>BNG</p>
+                                <p class="money">
+                                    <i class="display"></i>
+                                    <span></span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>pls</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>SimplePlay</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>ALL BET</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>SG</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>RTG</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>IFUN</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>WM</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>GS</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>bWin</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>36588</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>RSG</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>PNG</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li onclick="window.location.href='./deposit.html'">
+                    <i class="deposit_ic"></i>
+                    Nạp tiền
+                </li>
+                <li onclick="window.location.href='./transfer.html'">
+                    <i class="transfer_ic"></i>
+                    CHUYỂN ĐIỂM
+                </li>
+                <li onclick="window.location.href='./withdrawal.html'">
+                    <i class="withdrawal_ic"></i>
+                    RÚT TIỀN
+                </li>
+                <li onclick="window.location.href='./member.html'">
+                    <i class="member_ic"></i>
+                    Thông tin hội viên
+                </li>
+                <li onclick="window.location.href='./mail.html'">
+                    <i class="mail_ic"></i>
+                    Thư thông báo
+                </li>
+                <li onclick="window.location.href='../index.html'">
+                    <i class="exit_ic"></i>
+                    Đăng xuất
+                </li>
+            </ul>
+        </div>
+        <div class="gameNav">
+            <div class="center">
+                <img class="logo" src="../images/icon/logo.png">
+                <ul>
+                    <li class="menu" onclick="window.location.href='../index.html'">TRANG CHỦ</li>
+                    <li class="sportBtn" onclick="window.location.href='./sportPage.html'">THỂ THAO</li>
+                    <li class="liveBtn" onclick="window.location.href='./livePage.html'">CASINO</li>
+                    <li class="lotteryBtn" onclick="window.location.href='./lotteryPage.html'">XỔ SỐ</li>
+                    <li class="slotBtn" onclick="window.location.href='./slotPage.html'">SLOTS</li>
+                    <li class="fishBtn" onclick="window.location.href='./fishPage.html'">BẮN CÁ</li>
+                    <li class="boardBtn" onclick="window.location.href='./boardPage.html'">GAME BÀI</li>
+                    <li class="event" onclick="window.location.href='./event.html'">KHUYẾN MÃI</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topGameList">
+             <div class="listWrap">
+                 <div class="center">
+                     <i class="prev"></i>
+                     <div class="container">
+                         <ul class="sport">
+                             <li onclick="openSportGame()">
+                                 <div>
+                                     <img src="../images/partner/sport/36588.png">
+                                 </div>
+                                 <p>36588</p>
+                             </li>
+                         </ul>
+                         <ul class="live">
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_1.png">
+                                </div>
+                                <p>SA</p>
+                            </li>
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_2.png">
+                                </div>
+                                <p>All BET</p>
+                            </li>
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_3.png">
+                                </div>
+                                <p>DG</p>
+                            </li>
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_4.png">
+                                </div>
+                                <p>WM</p>
+                            </li>
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_5.png">
+                                </div>
+                                <p>OG</p>
+                            </li>
+                         </ul>
+                         <ul class="lottery">
+                            <li onclick="openLotteryGame()">
+                                <div>
+                                    <img src="../images/partner/lottery/rwd.png">
+                                </div>
+                                <p>RWD</p>
+                            </li>
+                         </ul>
+                         <ul class="slot">
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/bng.png">
+                                </div>
+                                <p>BNG</p>
+                                <div class="fixBox display">
+                                    <p class="title">duy trì</p>
+                                    <p>2022/03/02 下午2:00 ~</p>
+                                    <p>2020/03/02 下午4:00</p>
+                                </div>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/tpg.png">
+                                </div>
+                                <p>TPG</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/rsg.png">
+                                </div>
+                                <p>RSG</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/bwin.png">
+                                </div>
+                                <p>bWin</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/ifun.png">
+                                </div>
+                                <p>IFUN</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/pls.png">
+                                </div>
+                                <p>PLS</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/sp.png">
+                                </div>
+                                <p>SP</p>
+                            </li>
+                         </ul>
+                         <ul class="fish">
+                            <li onclick="window.location.href='../html/fishPage.html'">
+                                <div>
+                                    <img src="../images/partner/fish/tpg.png">
+                                </div>
+                                <p>TPG</p>
+                            </li>
+                            <li onclick="window.location.href='../html/fishPage.html'">
+                                <div>
+                                    <img src="../images/partner/fish/rsg.png">
+                                </div>
+                                <p>RSG</p>
+                            </li>
+                            <li onclick="window.location.href='../html/fishPage.html'">
+                                <div>
+                                    <img src="../images/partner/fish/bwin.png">
+                                </div>
+                                <p>bWin</p>
+                            </li>
+                            <li onclick="window.location.href='../html/fishPage.html'">
+                                <div>
+                                    <img src="../images/partner/fish/sp.png">
+                                </div>
+                                <p>SP</p>
+                            </li>
+                         </ul>
+                         <ul class="board">
+                            <li onclick="window.location.href='../html/boardPage.html'">
+                                <div>
+                                    <img src="../images/partner/board/rwd.png">
+                                </div>
+                                <p>RWD</p>
+                            </li>
+                         </ul>
+                     </div>
+                     <i class="next"></i>
+                 </div>
+             </div>
+        </div>
+        <div class="marqueeArea">
+            <div class="center">
+                <div class="marqueeWrap">
+                    <i class="marquee_ic"></i>
+                    <div class="marquee">
+                        <p>TEST</p>
+                    </div>
+                </div>
+                <div class="people">
+                    <i class="people_ic"></i>
+                    9999
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="innerPage">
+            <div class="center">
+                <aside class="innerSide">
+                    <div class="userInfo">
+                        <div>
+                            <p class="account">
+                                bbb123
+                                <span class="lv">Thành viên mới</span>
+                            </p>
+                            <p class="days">Gia nhập 110 ngày</p>
+                            <ul class="quickSelect">
+                                <li onclick="window.location.href='./deposit.html'">
+                                    <p class="btn"></p>
+                                    <p>NẠP TIỀN</p>
+                                </li>
+                                <li onclick="window.location.href='./transfer.html'">
+                                    <p class="btn transfer"></p>
+                                    <p>CHUYỂN ĐIỂM</p>
+                                </li>
+                                <li class="active" onclick="window.location.href='./withdrawal.html'">
+                                    <p class="btn withdrawal"></p>
+                                    <p>RÚT TIỀN</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="innerNav">
+                        <li onclick="window.location.href='./member.html'">
+                            <i class="user_ic"></i>
+                            Thông tin tài khoản
+                        </li>
+                        <li onclick="window.location.href='./invite.html'">
+                            <i class="invite_ic"></i>
+                            Mời các thành viên
+                        </li>
+                        <li onclick="window.location.href='./vip.html'">
+                            <i class="vip_ic"></i>
+                            Cấp bậc hội viên
+                        </li>
+                        <li onclick="window.location.href='./wallet.html'">
+                            <i class="wallet_ic"></i>
+                            Ví tiền của tôi
+                        </li>
+                        <li onclick="window.location.href='./bankCard.html'">
+                            <i class="card_ic"></i>
+                            Liên kết thẻ ngân hàng
+                        </li>
+                        <li onclick="window.location.href='./dealRecord.html'">
+                            <i class="dealRecord_ic"></i>
+                            Lịch sử giao dịch
+                        </li>
+                        <li onclick="window.location.href='./point.html'">
+                            <i class="dividend_ic"></i>
+                            Tra cứu điểm thưởng
+                        </li>
+                        <li onclick="window.location.href='./betRecord.html'">
+                            <i class="betRecord_ic"></i>
+                            Lịch sử đặt cược
+                        </li>
+                        <li onclick="window.location.href='./eventApply.html'">
+                            <i class="event_ic"></i>
+                            Đăng ký khuyến mãi
+                        </li>
+                        <li onclick="window.location.href='./mail.html'">
+                            <i class="mail_ic"></i>
+                            Thư thông báo
+                        </li>
+                    </ul>
+                </aside>
+                <section>
+                    <div class="withdrawalWrap">
+                        <div class="withdrawalMiddle">
+                            <div class="top">
+                                <div class="title">
+                                    <div>MỤC RÚT TIỀN</div>
+                                </div>
+                                <div class="walletBox">
+                                    <div class="smallBox">
+                                        <div class="smallTitle">
+                                            <p>
+                                                Ví chính
+                                                <i class="reset_ic"></i>
+                                            </p>
+                                        </div>
+                                        <div class="amount">$9999</div>
+                                    </div>
+                                    <div class="smallBox">
+                                        <div class="smallTitle">
+                                            <p class="limit">
+                                                Mức rút tối đa
+                                                <button onclick="window.location.href='./dealRecord.html'">Lịch sử rút tiền</button>
+                                            </p>
+                                        </div>
+                                        <div class="amount">$0</div>
+                                    </div>
+                                    <div class="smallBox">
+                                        <div class="smallTitle">
+                                            <p class="canUse">Tiền có thể rút</p>
+                                        </div>
+                                        <div class="amount">$9999</div>
+                                    </div>
+                                </div>
+                                <div class="platformBox">
+                                    <p class="platformTitle">Ví trò chơi</p>
+                                    <ul>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                        <li>
+                                            <div class="name">BNG</div>
+                                            <p class="amount">$0</p>
+                                        </li>
+                                    </ul>
+                                    <div class="open">
+                                        <button>
+                                            Xem thêm
+                                            <i class="db_arrow"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom">
+                                <p class="title">Rút tiền</p>
+                                <ul>
+                                    <li>
+                                        <p class="name">Số lần rút tiền</p>
+                                        <p class="num">
+                                            <span>Không hạn chế</span>
+                                        </p>
+                                        <p class="notice">Số lần có thể rút tiền trong ngày</p>
+                                    </li>
+                                    <li>
+                                        <p class="name">Hạn mức rút tiền</p>
+                                        <p class="num">
+                                            <span>200000.00</span>
+                                        </p>
+                                        <p class="notice">( trong ngàyHạn mức có thể rút tiền trong ngày)</p>
+                                    </li>
+                                    <li>
+                                        <p class="name">Mức rút tối đa của 1 lần</p>
+                                        <p class="num">
+                                            <span>149999</span>
+                                        </p>
+                                        <p class="notice">(Số tiền rút tối đa cho một giao dịch)</p>
+                                    </li>
+                                    <li>
+                                        <p class="name">trong ngàySố lần miễn phí rút tiền</p>
+                                        <p class="num">
+                                            <span>2</span>
+                                        </p>
+                                        <p class="notice">&ensp;</p>
+                                    </li>
+                                </ul>
+                                <form>
+                                    <div class="row">
+                                        <p>
+                                            <i>※</i>
+                                            Chọn ngân hàng
+                                        </p>
+                                        <div>
+                                            <select>
+                                                <option>Ví chính</option>
+                                            </select>
+                                            <div class="remind">Vui lòng chọn ngân hàng thụ hưởng:</div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <p>
+                                            <i>※</i>
+                                            Số tiền muốn rút
+                                        </p>
+                                        <div>
+                                            <input type="text">
+                                            <div class="remind">Để thuận tiện cho việc rút tiền, vui lòng chuyển tất cả các điểm trong ví trò chơi về ví chính sau đó tiến hành thao tác rút tiền.</div>
+                                            <div class="remind">Số tiền muốn rút phải nằm trong khoảng $500.00~149,999</div>
+                                        </div>
+                                    </div>
+                                    <button disabled>Xác nhận rút tiền</button>
+                                </form>
+                                <div class="remindBox">
+                                    <div class="remindTitle">Nhắc nhở quan trọng</div>
+                                    <div>1.Hội viên có thể rút tiền miễn phí số lần trong ngày khác nhau dựa theo cấp bậc VIP hiện có, nếu vượt quá số lần rút miễn phí sẽ bị tính phí thủ tục 1% ( Vui lòng tham khảo chi tiết VIP ).</div>
+                                    <div>2.Hội viên phải cược lớn hơn hoặc bằng số tiền nạp ( trừ ưu đãi nhận khuyến mãi ) mới có thể làm lệnh rút tiền. Lưu ý: Nếu lợi dụng nền tảng này để thực hiện bất kỳ hành vi trục lợi ( lừa đảo hay rửa tiền ), trang có quyền ngưng hỗ trợ và đóng băng tài khoản.</div>
+                                </div>
+                            </div> 
+                        </div>
+                        <aside class="rightSide">
+                            <div class="smallBoard">
+                                <div class="title">
+                                    Lịch sử rút tiền
+                                    <p class="more" onclick="window.location.href='./withdrawal.html'">Nhiều hơn.</p>
+                                </div>
+                                <ul class="list">
+                                    <p class="noData display">no Data</p>
+                                </ul>
+                            </div>
+                        </aside>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <nav class="sideBar">
+        <p class="download" onclick="window.location.href='./help.html'">
+            <i></i>
+            Tải bằng điện thoại
+        </p>
+        <ul class="rightSide">
+            <li class="service" onclick="window.location.href='./help.html'">
+                <i></i>
+            </li>
+            <li class="line" onclick="window.location.href='./help.html'">
+                <i></i>
+            </li>
+        </ul>
+    </nav>
+    <footer>
+        <div class="top">
+            <div class="center">
+                <div class="btnBox">
+                    <ul>
+                        <li class="openNews">Thông báo mới nhất</li>
+                        <li onclick="window.location.href='./event.html'">Khuyến mãi</li>
+                        <li onclick="window.location.href='./vip.html'">Cấp bậc hội viên</li>
+                        <li onclick="window.location.href='./help.html'">Trung tâm hỗ trợ</li>
+                        <li onclick="window.location.href='./help.html'">Thông tin trang</li>
+                    </ul>
+                </div>
+                <p>2021 au8988.net Đã đăng ký Bản quyền │ 18+</p>
+            </div>
+        </div>
+        <div class="footerList">
+            <div class="center">
+                <p>Chúng tôi nỗ lực trở thành công ty giải trí trực tuyến hàng đầu thế giới. Vì vậy, khi giải quyết bất cứ việc gì, đều ưu tiên suy nghĩ cho quyền lợi của khách hàng đầu tiên. Sự hài lòng lớn nhất của khách hàng chính</p>
+                <p>là thành công của chúng tôi.Cung cấp dịch vụ khách hàng trực tuyến 24 giờ, đồng thời cũng cung cấp dịch vụ tốt nhất được kết hợp giữa tính chuyên nghiệp và sự nhân văn.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="filter display">
+        <!--遊戲投注彈窗-->
+        <div class="jumpWindow betWindow sportGame">
+            <div class="title">
+                <p>Chuyển điểm nhanh</p>
+                <i class="close_ic"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p>nền tảng</p>
+                    <div class="smallTitle">36588</div>
+                </div>
+                <div class="row">
+                    <p>Ví chính</p>
+                    <input type="text" value="$9999" readonly>
+                </div>
+                <div class="row">
+                    <i class="trans_arrow"></i>
+                </div>
+                <div class="row">
+                    <p>36588 SPORTS</p>
+                    <input type="text" value="$0" readonly>
+                </div>
+                <div class="row">
+                    <p>Số điểm muốn chuyển</p>
+                    <input type="text" value="$100">
+                </div>
+                <div class="row forBtn">
+                    <div class="btnBox">
+                        <button>$100</button>
+                        <button>$500</button>
+                        <button>$1000</button>
+                        <button>$3000</button>
+                        <button>$5000</button>
+                        <button>$10000</button>
+                        <button>Tất cả</button>
+                    </div>
+                </div>
+                <div class="row forBtn">
+                    <button class="check">Xác nhận chuyển điểm</button>
+                </div>
+            </form>
+            <div class="enterGame">
+                <button>Vào Game</button>
+            </div>
+        </div>
+        <div class="jumpWindow betWindow liveGame">
+            <div class="title">
+                <p>Chuyển điểm nhanh</p>
+                <i class="close_ic"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p>nền tảng</p>
+                    <div class="smallTitle">WM CASINO</div>
+                </div>
+                <div class="row">
+                    <p>Ví chính</p>
+                    <input type="text" value="$9999" readonly>
+                </div>
+                <div class="row">
+                    <i class="trans_arrow"></i>
+                </div>
+                <div class="row">
+                    <p>WM CASINO</p>
+                    <input type="text" value="$0" readonly>
+                </div>
+                <div class="row">
+                    <p>Số điểm muốn chuyển</p>
+                    <input type="text" value="$100">
+                </div>
+                <div class="row forBtn">
+                    <div class="btnBox">
+                        <button>$100</button>
+                        <button>$500</button>
+                        <button>$1000</button>
+                        <button>$3000</button>
+                        <button>$5000</button>
+                        <button>$10000</button>
+                        <button>Tất cả</button>
+                    </div>
+                </div>
+                <div class="row forBtn">
+                    <button class="check">Xác nhận chuyển điểm</button>
+                </div>
+            </form>
+            <div class="enterGame">
+                <button>Vào Game</button>
+            </div>
+        </div>
+        <div class="jumpWindow betWindow lotteryGame">
+            <div class="title">
+                <p>Chuyển điểm nhanh</p>
+                <i class="close_ic"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p>Ví chính</p>
+                    <div class="smallTitle">RWD</div>
+                </div>
+                <div class="row">
+                    <p>Số điểm muốn chuyển</p>
+                    <input type="text" value="$9999" readonly>
+                </div>
+                <div class="row">
+                    <i class="trans_arrow"></i>
+                </div>
+                <div class="row">
+                    <p>RWD</p>
+                    <input type="text" value="$0" readonly>
+                </div>
+                <div class="row">
+                    <p>Số điểm muốn chuyển</p>
+                    <input type="text" value="$100">
+                </div>
+                <div class="row forBtn">
+                    <div class="btnBox">
+                        <button>$100</button>
+                        <button>$500</button>
+                        <button>$1000</button>
+                        <button>$3000</button>
+                        <button>$5000</button>
+                        <button>$10000</button>
+                        <button>Tất cả</button>
+                    </div>
+                </div>
+                <div class="row forBtn">
+                    <button class="check">Xác nhận chuyển điểm</button>
+                </div>
+            </form>
+            <div class="enterGame">
+                <button>Vào Game</button>
+            </div>
+        </div>
+        <!--最新公告-->
+        <div class="jumpWindow news">
+            <div class="title">
+                <p>Thông báo mới nhất</p>
+                <i class="close_ic"></i>
+            </div>
+            <ul class="nav">
+                <li class="hot active">HOT</li>
+                <li class="normal">Tin phổ biến</li>
+                <li class="deposit">Thông tin Nạp tiền</li>
+            </ul>
+            <ul class="content forHot display">
+                <li>
+                    <div>
+                        <p class="text">testtesttesttesttesttesttesttest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="text">testtest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="text">testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="content forNormal">
+                <li>
+                    <div>
+                        <p class="text">testtest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="text">testtest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="content forDeposit">
+                <li>
+                    <div>
+                        <p class="text">testtest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--未綁定資料彈窗-->
+        <div class="jumpWindow plsGo display">
+            <div class="title">
+                <p>Lời nhắc</p>
+                <i class="close_ic"></i>
+            </div>
+            <div class="content">
+                <div>Không có ngân hàng nào, vui lòng đi đến liên kết thẻ ngân hàng</div>
+            </div>
+            <div class="btnBox">
+                <button class="close">Đồng ý</button>
+            </div>
+        </div>
+        <!--loading-->
+        <div class="jumpWindow loading">
+            <div class="title">
+                <p>Lời nhắcs</p>
+            </div>
+            <div class="content">
+                <div></div>
+                <p>loading...</p>
+            </div>
+        </div>
+    </div>
+    <div class="bg"></div>
+</body>
+</html>

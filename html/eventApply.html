@@ -1,0 +1,1111 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.25">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="../js/slick-1.8.1/slick/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="../js/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="../js/javascript.js"></script>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <!-- <span class="brad">
+                TONG BOU
+                <span class="time"></span>
+            </span> -->
+            <ul class="user alLogin display">
+                <li class="lv">
+                    <p class="level">Thành viên mới</p>
+                    <p class="name">
+                        userName
+                        <span class="total">9999</span>
+                    </p>
+                    <ul class="transferInfo">
+                        <li class="platform">
+                            <div>
+                                <p>BNG</p>
+                                <p class="money">
+                                    <i class="display"></i>
+                                    <span></span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>pls</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>SimplePlay</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>ALL BET</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>SG</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>RTG</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>IFUN</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>WM</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>GS</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>bWin</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>36588</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>RSG</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="platform">
+                            <div>
+                                <p>PNG</p>
+                                <p class="money">
+                                    <i></i>
+                                    <span>0</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li onclick="window.location.href='./deposit.html'">
+                    <i class="deposit_ic"></i>
+                    Nạp tiền
+                </li>
+                <li onclick="window.location.href='./transfer.html'">
+                    <i class="transfer_ic"></i>
+                    CHUYỂN ĐIỂM
+                </li>
+                <li onclick="window.location.href='./withdrawal.html'">
+                    <i class="withdrawal_ic"></i>
+                    RÚT TIỀN
+                </li>
+                <li onclick="window.location.href='./member.html'">
+                    <i class="member_ic"></i>
+                    Thông tin hội viên
+                </li>
+                <li onclick="window.location.href='./mail.html'">
+                    <i class="mail_ic"></i>
+                    Thư thông báo
+                </li>
+                <li onclick="window.location.href='../index.html'">
+                    <i class="exit_ic"></i>
+                    Đăng xuất
+                </li>
+            </ul>
+        </div>
+        <div class="gameNav">
+            <div class="center">
+                <img class="logo" src="../images/icon/logo.png">
+                <ul>
+                    <li class="menu" onclick="window.location.href='../index.html'">TRANG CHỦ</li>
+                    <li class="sportBtn" onclick="window.location.href='./sportPage.html'">THỂ THAO</li>
+                    <li class="liveBtn" onclick="window.location.href='./livePage.html'">CASINO</li>
+                    <li class="lotteryBtn" onclick="window.location.href='./lotteryPage.html'">XỔ SỐ</li>
+                    <li class="slotBtn" onclick="window.location.href='./slotPage.html'">SLOTS</li>
+                    <li class="fishBtn" onclick="window.location.href='./fishPage.html'">BẮN CÁ</li>
+                    <li class="boardBtn" onclick="window.location.href='./boardPage.html'">GAME BÀI</li>
+                    <li class="event" onclick="window.location.href='./event.html'">KHUYẾN MÃI</li>
+                </ul>
+            </div>
+        </div>
+        <div class="topGameList">
+             <div class="listWrap">
+                 <div class="center">
+                     <i class="prev"></i>
+                     <div class="container">
+                         <ul class="sport">
+                             <li onclick="openSportGame()">
+                                 <div>
+                                     <img src="../images/partner/sport/36588.png">
+                                 </div>
+                                 <p>36588</p>
+                             </li>
+                         </ul>
+                         <ul class="live">
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_1.png">
+                                </div>
+                                <p>SA</p>
+                            </li>
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_2.png">
+                                </div>
+                                <p>All BET</p>
+                            </li>
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_3.png">
+                                </div>
+                                <p>DG</p>
+                            </li>
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_4.png">
+                                </div>
+                                <p>WM</p>
+                            </li>
+                            <li onclick="openLiveGame()">
+                                <div>
+                                    <img src="../images/partner/live/live_5.png">
+                                </div>
+                                <p>OG</p>
+                            </li>
+                         </ul>
+                         <ul class="lottery">
+                            <li onclick="openLotteryGame()">
+                                <div>
+                                    <img src="../images/partner/lottery/rwd.png">
+                                </div>
+                                <p>RWD</p>
+                            </li>
+                         </ul>
+                         <ul class="slot">
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/bng.png">
+                                </div>
+                                <p>BNG</p>
+                                <div class="fixBox display">
+                                    <p class="title">duy trì</p>
+                                    <p>2022/03/02 下午2:00 ~</p>
+                                    <p>2020/03/02 下午4:00</p>
+                                </div>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/tpg.png">
+                                </div>
+                                <p>TPG</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/rsg.png">
+                                </div>
+                                <p>RSG</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/bwin.png">
+                                </div>
+                                <p>bWin</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/ifun.png">
+                                </div>
+                                <p>IFUN</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/pls.png">
+                                </div>
+                                <p>PLS</p>
+                            </li>
+                            <li onclick="window.location.href='./slotPage.html'">
+                                <div>
+                                    <img src="../images/partner/slot/sp.png">
+                                </div>
+                                <p>SP</p>
+                            </li>
+                         </ul>
+                         <ul class="fish">
+                            <li onclick="window.location.href='../html/fishPage.html'">
+                                <div>
+                                    <img src="../images/partner/fish/tpg.png">
+                                </div>
+                                <p>TPG</p>
+                            </li>
+                            <li onclick="window.location.href='../html/fishPage.html'">
+                                <div>
+                                    <img src="../images/partner/fish/rsg.png">
+                                </div>
+                                <p>RSG</p>
+                            </li>
+                            <li onclick="window.location.href='../html/fishPage.html'">
+                                <div>
+                                    <img src="../images/partner/fish/bwin.png">
+                                </div>
+                                <p>bWin</p>
+                            </li>
+                            <li onclick="window.location.href='../html/fishPage.html'">
+                                <div>
+                                    <img src="../images/partner/fish/sp.png">
+                                </div>
+                                <p>SP</p>
+                            </li>
+                         </ul>
+                         <ul class="board">
+                            <li onclick="window.location.href='../html/boardPage.html'">
+                                <div>
+                                    <img src="../images/partner/board/rwd.png">
+                                </div>
+                                <p>RWD</p>
+                            </li>
+                         </ul>
+                     </div>
+                     <i class="next"></i>
+                 </div>
+             </div>
+        </div>
+        <div class="marqueeArea">
+            <div class="center">
+                <div class="marqueeWrap">
+                    <i class="marquee_ic"></i>
+                    <div class="marquee">
+                        <p>TEST</p>
+                    </div>
+                </div>
+                <div class="people">
+                    <i class="people_ic"></i>
+                    9999
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="innerPage">
+            <div class="center">
+                <aside class="innerSide">
+                    <div class="userInfo">
+                        <div>
+                            <p class="account">
+                                bbb123
+                                <span class="lv">Thành viên mới</span>
+                            </p>
+                            <p class="days">Gia nhập 110 ngày</p>
+                            <ul class="quickSelect">
+                                <li onclick="window.location.href='./deposit.html'">
+                                    <p class="btn"></p>
+                                    <p>NẠP TIỀN</p>
+                                </li>
+                                <li onclick="window.location.href='./transfer.html'">
+                                    <p class="btn transfer"></p>
+                                    <p>CHUYỂN ĐIỂM</p>
+                                </li>
+                                <li onclick="window.location.href='./withdrawal.html'">
+                                    <p class="btn withdrawal"></p>
+                                    <p>RÚT TIỀN</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <ul class="innerNav">
+                        <li onclick="window.location.href='./member.html'">
+                            <i class="user_ic"></i>
+                            Thông tin tài khoản
+                        </li>
+                        <li onclick="window.location.href='./invite.html'">
+                            <i class="invite_ic"></i>
+                            Mời các thành viên
+                        </li>
+                        <li onclick="window.location.href='./vip.html'">
+                            <i class="vip_ic"></i>
+                            Cấp bậc hội viên
+                        </li>
+                        <li onclick="window.location.href='./wallet.html'">
+                            <i class="wallet_ic"></i>
+                            Ví tiền của tôi
+                        </li>
+                        <li onclick="window.location.href='./bankCard.html'">
+                            <i class="card_ic"></i>
+                            Liên kết thẻ ngân hàng
+                        </li>
+                        <li onclick="window.location.href='./dealRecord.html'">
+                            <i class="dealRecord_ic"></i>
+                            Lịch sử giao dịch
+                        </li>
+                        <li onclick="window.location.href='./point.html'">
+                            <i class="dividend_ic"></i>
+                            Tra cứu điểm thưởng
+                        </li>
+                        <li onclick="window.location.href='./betRecord.html'">
+                            <i class="betRecord_ic"></i>
+                            Lịch sử đặt cược
+                        </li>
+                        <li class="active" onclick="window.location.href='./eventApply.html'">
+                            <i class="event_ic"></i>
+                            Đăng ký khuyến mãi
+                        </li>
+                        <li onclick="window.location.href='./mail.html'">
+                            <i class="mail_ic"></i>
+                            Thư thông báo
+                        </li>
+                    </ul>
+                </aside>
+                <section>
+                    <div class="eventWrap">
+                        <div class="title">
+                            <h1>Đăng ký khuyến mãi</h1>
+                        </div>
+                        <div class="eventMiddle">
+                            <ul class="tabs">
+                                <li class="active">Đăng ký khuyến mãi</li>
+                                <li>Đã đăng ký rút</li>
+                                <li>Lịch sử đăng ký ưu đãi</li>
+                            </ul>
+                            <div class="eventBox display">
+                                <ul>
+                                    <li>
+                                        <div class="header">
+                                            <div>
+                                                <!-- <p class="first">前派</p> -->
+                                                <p class="head">Tặng 💯 % tiền thường lần nạp đầu tiên</p>
+                                                <!-- <p class="day-tips">
+                                                    <em>2022-01-06 11:39:59</em>
+                                                    任務將結束
+                                                </p> -->
+                                            </div>
+                                            <div>
+                                                <p>Ghi chép điểm tặng</p>
+                                                <p>
+                                                    <span class="now">1</span>
+                                                    <span class="split">/</span>
+                                                    <span>3</span>
+                                                </p>
+                                                <button class="apply">Đăng ký rút/lãnh</button>
+                                                <button class="check">Xem hoạt động</button>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <ul>
+                                                <li>
+                                                    <p class="smallTitle">Thời gian hoạt động</p>
+                                                    <p>Không hạn chế</p>
+                                                </li>
+                                                <li>
+                                                    <p class="smallTitle">Tỷ lệ tặng nạp tiền</p>
+                                                    <p>100%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="smallTitle">Lần đầu nạp tiền</p>
+                                                    <p>2000</p>
+                                                </li>
+                                                <li>
+                                                    <p class="smallTitle">Điểm thưởng tối đa</p>
+                                                    <p>1000</p>
+                                                </li>
+                                                <li>
+                                                    <p class="smallTitle">Ngưỡng rút bội số</p>
+                                                    <p>12</p>
+                                                </li>
+                                                <li class="full">
+                                                    <p class="smallTitle">Lượng ngưỡng rút hiện tại</p>
+                                                    <p class="cur">0</p>
+                                                </li>
+                                                <li class="full">
+                                                    <p class="smallTitle">__unknown__</p>
+                                                    <p>Không hạn chế</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="header">
+                                            <div>
+                                                <!-- <p class="first">前派</p> -->
+                                                <p class="head">Tặng 💯 % tiền thường lần nạp đầu tiên</p>
+                                                <!-- <p class="day-tips">
+                                                    <em>2022-01-06 11:39:59</em>
+                                                    任務將結束
+                                                </p> -->
+                                            </div>
+                                            <div>
+                                                <p>Ghi chép điểm tặng</p>
+                                                <p>
+                                                    <span class="now">1</span>
+                                                    <span class="split">/</span>
+                                                    <span>3</span>
+                                                </p>
+                                                <button class="apply">Đăng ký rút/lãnh</button>
+                                                <button class="check">Xem hoạt động</button>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <ul>
+                                                <li>
+                                                    <p class="smallTitle">Thời gian hoạt động</p>
+                                                    <p>Không hạn chế</p>
+                                                </li>
+                                                <li>
+                                                    <p class="smallTitle">Tỷ lệ tặng nạp tiền</p>
+                                                    <p>100%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="smallTitle">Lần đầu nạp tiền</p>
+                                                    <p>2000</p>
+                                                </li>
+                                                <li>
+                                                    <p class="smallTitle">Điểm thưởng tối đa</p>
+                                                    <p>1000</p>
+                                                </li>
+                                                <li>
+                                                    <p class="smallTitle">Ngưỡng rút bội số</p>
+                                                    <p>12</p>
+                                                </li>
+                                                <li class="full">
+                                                    <p class="smallTitle">Lượng ngưỡng rút hiện tại</p>
+                                                    <p class="cur">0</p>
+                                                </li>
+                                                <li class="full">
+                                                    <p class="smallTitle">__unknown__</p>
+                                                    <p>Không hạn chế</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="eventBoxAl">
+                                <ul>
+                                    <li>
+                                        <div class="header">
+                                            <div>
+                                                <!-- <p class="first">前派</p> -->
+                                                <p class="head">Tặng 💯 % tiền thường lần nạp đầu tiên</p>
+                                                <!-- <p class="day-tips">
+                                                    <em>2022-01-06 11:39:59</em>
+                                                    任務將結束
+                                                </p> -->
+                                            </div>
+                                            <div>
+                                                <p>Ghi chép điểm tặng</p>
+                                                <p>
+                                                    <span class="now">1</span>
+                                                    <span class="split">/</span>
+                                                    <span>3</span>
+                                                </p>
+                                                <button class="check">Xem hoạt động</button>
+                                            </div>
+                                        </div>
+                                        <div class="content">
+                                            <ul>
+                                                <li>
+                                                    <p class="smallTitle">Thời gian hoạt động</p>
+                                                    <p>Không hạn chế</p>
+                                                </li>
+                                                <li>
+                                                    <p class="smallTitle">Tỷ lệ tặng nạp tiền</p>
+                                                    <p>100%</p>
+                                                </li>
+                                                <li>
+                                                    <p class="smallTitle">Lần đầu nạp tiền</p>
+                                                    <p>2000</p>
+                                                </li>
+                                                <li>
+                                                    <p class="smallTitle">Điểm thưởng tối đa</p>
+                                                    <p>1000</p>
+                                                </li>
+                                                <li>
+                                                    <p class="smallTitle">Ngưỡng rút bội số</p>
+                                                    <p>12</p>
+                                                </li>
+                                                <li class="full">
+                                                    <p class="smallTitle">Lượng ngưỡng rút hiện tại</p>
+                                                    <p class="cur">0</p>
+                                                </li>
+                                                <li class="full">
+                                                    <p class="smallTitle">__unknown__</p>
+                                                    <p>Không hạn chế</p>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="eventRecord">
+                                <div class="recordWrap">
+                                    <div class="search">
+                                        <form>
+                                            <div class="bigBox">
+                                                <div class="inputBox">
+                                                    <div class="row">
+                                                        <div class="smallTitle">Loại hình</div>
+                                                        <div class="fakeInput">
+                                                            <select>
+                                                                <option>Tất cả</option>
+                                                                <option>Thông qua xét duyệt</option>
+                                                                <option>Hủy bỏ</option>
+                                                                <option>Không thông qua xét duyệt</option>
+                                                                <option>Đang chờ</option>
+                                                                <option>Đang xét duyệt</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row">
+                                                        <div class="smallTitle">ngày</div>
+                                                        <div class="fakeInput">
+                                                            <input type="date" value="2022-01-08">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="dateBtnBox">
+                                                <button type="button">Hôm qua</button>
+                                                <button type="button" class="active">Hôm nay</button>
+                                                <button type="button">Tuần này</button>
+                                                <button type="button">Tháng này</button>
+                                            </div>
+                                            <div class="checkBtn">
+                                                <button type="button">Tra cứu</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="tableWrap">
+                                        <p class="tableTitle">Lịch sử đăng ký ưu đãi</p>
+                                        <table class="display">
+                                            <tr>
+                                                <th>
+                                                    <p>Ngày nộp đơn</p>
+                                                </th>
+                                                <th>
+                                                    <p>Tên hoạt động</p>
+                                                </th>
+                                                <th>
+                                                    <p>Lượng ngưỡng rút</p>
+                                                </th>
+                                                <th>
+                                                    <p>Lượng ngưỡng rút hiện tại</p>
+                                                </th>
+                                                <th>
+                                                    <p>Tặng điểm</p>
+                                                </th>
+                                                <th>
+                                                    <p>Tỉ lệ phần trăm</p>
+                                                </th>
+                                                <th>
+                                                    <p>Số điểm tặng tối đa</p>
+                                                </th>
+                                                <th>
+                                                    <p>Ngưỡng rút nhỏ nhất</p>
+                                                </th>
+                                                <th>
+                                                    <p>Trạng thái</p>
+                                                </th>
+                                                <th>
+                                                    <p>Lý do</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Tặng 💯 % tiền thường lần nạp đầu tiên</p>
+                                                </td>
+                                                <td>
+                                                    <p>100</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>1000</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>đang xem xét</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <table>
+                                            <tr>
+                                                <th>
+                                                    <p>Ngày nộp đơn</p>
+                                                </th>
+                                                <th>
+                                                    <p>Tên hoạt động</p>
+                                                </th>
+                                                <th>
+                                                    <p>Lượng ngưỡng rút</p>
+                                                </th>
+                                                <th>
+                                                    <p>Lượng ngưỡng rút hiện tại</p>
+                                                </th>
+                                                <th>
+                                                    <p>Tặng điểm</p>
+                                                </th>
+                                                <th>
+                                                    <p>Tỉ lệ phần trăm</p>
+                                                </th>
+                                                <th>
+                                                    <p>Số điểm tặng tối đa</p>
+                                                </th>
+                                                <th>
+                                                    <p>Ngưỡng rút nhỏ nhất</p>
+                                                </th>
+                                                <th>
+                                                    <p>Trạng thái</p>
+                                                </th>
+                                                <th>
+                                                    <p>Lý do</p>
+                                                </th>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Tặng 💯 % tiền thường lần nạp đầu tiên</p>
+                                                </td>
+                                                <td>
+                                                    <p>100</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>1000</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>đang xem xét</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Tặng 💯 % tiền thường lần nạp đầu tiên</p>
+                                                </td>
+                                                <td>
+                                                    <p>100</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>1000</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>đang xem xét</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <p>Tặng 💯 % tiền thường lần nạp đầu tiên</p>
+                                                </td>
+                                                <td>
+                                                    <p>100</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>1000</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>đang xem xét</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                                <td>
+                                                    <p>-</p>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                        <p class="noData">no Data</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <nav class="sideBar">
+        <p class="download" onclick="window.location.href='./help.html'">
+            <i></i>
+            Tải bằng điện thoại
+        </p>
+        <ul class="rightSide">
+            <li class="service" onclick="window.location.href='./help.html'">
+                <i></i>
+            </li>
+            <li class="line" onclick="window.location.href='./help.html'">
+                <i></i>
+            </li>
+        </ul>
+    </nav>
+    <footer>
+        <div class="top">
+            <div class="center">
+                <div class="btnBox">
+                    <ul>
+                        <li class="openNews">Thông báo mới nhất</li>
+                        <li onclick="window.location.href='./event.html'">Khuyến mãi</li>
+                        <li onclick="window.location.href='./vip.html'">Cấp bậc hội viên</li>
+                        <li onclick="window.location.href='./help.html'">Trung tâm hỗ trợ</li>
+                        <li onclick="window.location.href='./help.html'">Thông tin trang</li>
+                    </ul>
+                </div>
+                <p>2021 au8988.net Đã đăng ký Bản quyền │ 18+</p>
+            </div>
+        </div>
+        <div class="footerList">
+            <div class="center">
+                <p>Chúng tôi nỗ lực trở thành công ty giải trí trực tuyến hàng đầu thế giới. Vì vậy, khi giải quyết bất cứ việc gì, đều ưu tiên suy nghĩ cho quyền lợi của khách hàng đầu tiên. Sự hài lòng lớn nhất của khách hàng chính</p>
+                <p>là thành công của chúng tôi.Cung cấp dịch vụ khách hàng trực tuyến 24 giờ, đồng thời cũng cung cấp dịch vụ tốt nhất được kết hợp giữa tính chuyên nghiệp và sự nhân văn.</p>
+            </div>
+        </div>
+    </footer>
+    <div class="filter">
+        <!--遊戲投注彈窗-->
+        <div class="jumpWindow betWindow sportGame">
+            <div class="title">
+                <p>Chuyển điểm nhanh</p>
+                <i class="close_ic"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p>nền tảng</p>
+                    <div class="smallTitle">36588</div>
+                </div>
+                <div class="row">
+                    <p>Ví chính</p>
+                    <input type="text" value="$9999" readonly>
+                </div>
+                <div class="row">
+                    <i class="trans_arrow"></i>
+                </div>
+                <div class="row">
+                    <p>36588 SPORTS</p>
+                    <input type="text" value="$0" readonly>
+                </div>
+                <div class="row">
+                    <p>Số điểm muốn chuyển</p>
+                    <input type="text" value="$100">
+                </div>
+                <div class="row forBtn">
+                    <div class="btnBox">
+                        <button>$100</button>
+                        <button>$500</button>
+                        <button>$1000</button>
+                        <button>$3000</button>
+                        <button>$5000</button>
+                        <button>$10000</button>
+                        <button>Tất cả</button>
+                    </div>
+                </div>
+                <div class="row forBtn">
+                    <button class="check">Xác nhận chuyển điểm</button>
+                </div>
+            </form>
+            <div class="enterGame">
+                <button>Vào Game</button>
+            </div>
+        </div>
+        <div class="jumpWindow betWindow liveGame">
+            <div class="title">
+                <p>Chuyển điểm nhanh</p>
+                <i class="close_ic"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p>nền tảng</p>
+                    <div class="smallTitle">WM CASINO</div>
+                </div>
+                <div class="row">
+                    <p>Ví chính</p>
+                    <input type="text" value="$9999" readonly>
+                </div>
+                <div class="row">
+                    <i class="trans_arrow"></i>
+                </div>
+                <div class="row">
+                    <p>WM CASINO</p>
+                    <input type="text" value="$0" readonly>
+                </div>
+                <div class="row">
+                    <p>Số điểm muốn chuyển</p>
+                    <input type="text" value="$100">
+                </div>
+                <div class="row forBtn">
+                    <div class="btnBox">
+                        <button>$100</button>
+                        <button>$500</button>
+                        <button>$1000</button>
+                        <button>$3000</button>
+                        <button>$5000</button>
+                        <button>$10000</button>
+                        <button>Tất cả</button>
+                    </div>
+                </div>
+                <div class="row forBtn">
+                    <button class="check">Xác nhận chuyển điểm</button>
+                </div>
+            </form>
+            <div class="enterGame">
+                <button>Vào Game</button>
+            </div>
+        </div>
+        <div class="jumpWindow betWindow lotteryGame">
+            <div class="title">
+                <p>Chuyển điểm nhanh</p>
+                <i class="close_ic"></i>
+            </div>
+            <form>
+                <div class="row">
+                    <p>Ví chính</p>
+                    <div class="smallTitle">RWD</div>
+                </div>
+                <div class="row">
+                    <p>Số điểm muốn chuyển</p>
+                    <input type="text" value="$9999" readonly>
+                </div>
+                <div class="row">
+                    <i class="trans_arrow"></i>
+                </div>
+                <div class="row">
+                    <p>RWD</p>
+                    <input type="text" value="$0" readonly>
+                </div>
+                <div class="row">
+                    <p>Số điểm muốn chuyển</p>
+                    <input type="text" value="$100">
+                </div>
+                <div class="row forBtn">
+                    <div class="btnBox">
+                        <button>$100</button>
+                        <button>$500</button>
+                        <button>$1000</button>
+                        <button>$3000</button>
+                        <button>$5000</button>
+                        <button>$10000</button>
+                        <button>Tất cả</button>
+                    </div>
+                </div>
+                <div class="row forBtn">
+                    <button class="check">Xác nhận chuyển điểm</button>
+                </div>
+            </form>
+            <div class="enterGame">
+                <button>Vào Game</button>
+            </div>
+        </div>
+        <!--最新公告-->
+        <div class="jumpWindow news">
+            <div class="title">
+                <p>Thông báo mới nhất</p>
+                <i class="close_ic"></i>
+            </div>
+            <ul class="nav">
+                <li class="hot active">HOT</li>
+                <li class="normal">Tin phổ biến</li>
+                <li class="deposit">Thông tin Nạp tiền</li>
+            </ul>
+            <ul class="content forHot display">
+                <li>
+                    <div>
+                        <p class="text">testtesttesttesttesttesttesttest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="text">testtest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="text">testtesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttesttest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="content forNormal">
+                <li>
+                    <div>
+                        <p class="text">testtest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <p class="text">testtest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+            <ul class="content forDeposit">
+                <li>
+                    <div>
+                        <p class="text">testtest</p>
+                        <p class="date">2021/09/26</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!--查看活動-->
+        <div class="jumpWindow checkEvent">
+            <div class="title">
+                <p>Chi tiết nhiệm vụ</p>
+                <i class="close_ic"></i>
+            </div>
+            <div class="content">
+                <div class="imgBox">
+                    <img src="../images/event.png">
+                    <p>
+                        Tặng 💯 % tiền thường lần nạp đầu tiên
+
+                        Dành cho thành viên mới đăng kí 
+                        
+                        Cách áp dụng: Sau khi thành viên gửi tiền lần đầu tiên (trước khi đặt cược), vào trung tâm thành viên hoặc trang chiết khấu để đăng ký chiết khấu, tối đa 2000 sẽ được gửi và số tiền rút phải gấp 12 lần doanh thu.
+                    </p>
+                    <p>Ví dụ về doanh thu bắt buộc để rút tiền:</p>
+                    <p>Giả sử khoản tiền gửi đầu tiên là 2000</p>
+                    <p>2000X100% = 2000</p>
+                    <p>(2000 + 2000) X12 = 48000 (Doanh thu yêu cầu để rút tiền)</p>
+                </div>
+            </div>
+            <div class="btnBox">
+                <button class="close">Xác nhận</button>
+            </div>
+        </div>
+        <!--已申請優惠-->
+        <div class="jumpWindow plsGo">
+            <div class="title">
+                <p>Lời nhắc</p>
+                <i class="close_ic"></i>
+            </div>
+            <div class="content">
+                <div>
+                    Vui lòng vào mục Thông tin tài khoản để để 
+                    thêm thông tin cá nhân
+                </div>
+            </div>
+            <div class="btnBox">
+                <button class="close">Đồng ý</button>
+            </div>
+        </div>
+    </div>
+    <div class="bg"></div>
+</body>
+</html>
